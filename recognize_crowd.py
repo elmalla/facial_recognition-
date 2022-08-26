@@ -66,16 +66,9 @@ def plotimagemarking(img, name,pred,boxTuple):
 
 # load our serialized face detector from disk
 print("[INFO] loading face detector...")
-absolute_path =  os.path.abspath("recognize_crowd.py") #os.path.dirname(__file__)
-
-detectPath = os.path.sep.join([absolute_path,args["detector"]])
-protoPath = os.path.sep.join([detectPath, "deploy.prototxt"])
-modelPath = os.path.sep.join([detectPath,
+protoPath = os.path.sep.join([args["detector"], "deploy.prototxt"])
+modelPath = os.path.sep.join([args["detector"],
 	"res10_300x300_ssd_iter_140000.caffemodel"])
-
-
-print ("absolute_path ")
-print (protoPath)
 detector = cv2.dnn.readNetFromCaffe(protoPath, modelPath)
 
 # load our serialized face embedding model from disk
