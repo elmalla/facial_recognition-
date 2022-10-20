@@ -1,6 +1,6 @@
 ## Python Project for facial recognition of patients & Outdoor crowd 
 
-Face recognition with OpenCV, Python, and deep learning detected a patient was identity was unknown and using old pictures for him, the model detected him sucessfully
+Face recognition with OpenCV, Python, and deep learning detected a patient whose identity was unknown and using old pictures for him, the model detected him sucessfully
 even with accident marks on his face.
 
 A second test was performed on crowd outdoor gathering and the model performed also well.  
